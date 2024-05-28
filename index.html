@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форматування таблиць</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Таблиця з різними форматуваннями</caption>
+        <thead>
+            <tr>
+                <th>Прізвище</th>
+                <th>Ім'я</th>
+                <th>Вік</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Петров</td>
+                <td>Іван</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Сидоров</td>
+                <td>Петро</td>
+                <td>30</td>
+            </tr>
+            <tr class="highlight">
+                <td>Іванов</td>
+                <td>Олег</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Ковальчук</td>
+                <td>Марина</td>
+                <td>35</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
